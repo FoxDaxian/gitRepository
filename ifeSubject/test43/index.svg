@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 	<clipPath id="path" clipPathUnits="objectBoundingBox">
+		<polygon points="1 0, 1 1, 0.333 1, 0.666 0"/>
+	</clipPath>
+</svg>

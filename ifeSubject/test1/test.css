@@ -1,0 +1,176 @@
+body,ul,p,h1,h2,h3,h4,h5,h6{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+header{
+	border: 1px solid black;
+	padding: 0 20px 0 40px;
+	background-color: #333333;
+}
+header img{
+	margin-top: 40px;
+	margin-bottom: 10px;
+	height: 80px;
+}
+header ul {
+	float: right;
+	margin: 50px;
+}
+header ul li{
+	float: right;
+	margin: 0 5px;
+}
+header ul li a{
+	color: white;
+	text-decoration: none;
+}
+.first_article{
+	padding: 5px;
+	margin: 20px 20px 0 20px;
+	border: 1px solid black;
+	box-shadow: 2px 2px 10px gray;
+}
+.first_article h2{
+	margin:15px;
+}
+.first_article h3{
+	margin:15px;
+}
+.first_article p{
+	margin:15px;
+}
+.first_article img{
+	margin:15px;
+}
+.second_article{
+	padding: 5px;
+	margin: 20px 20px 0 20px;
+	border: 1px solid black;
+	box-shadow: 2px 2px 10px gray;
+}
+.second_article h2{
+	margin:15px;
+}
+.second_article h3{
+	margin:15px;
+}
+.second_article p{
+	margin:15px;
+}
+.second_article img{
+	margin:15px;
+}
+.second_article ul,.second_article ul li{
+	margin: 10px
+}
+.imgs{
+	padding: 5px;
+	margin: 20px 20px 0 20px;
+	border: 1px solid black;
+	box-shadow: 2px 2px 10px gray;
+}
+.imgs h2{
+	margin:15px;
+}
+.imgs h3{
+	margin:15px;
+}
+.imgs p{
+	margin:15px;
+}
+.imgs img{
+	width: 300px;
+	margin: 0 auto;
+}
+.imgs ul,.imgs ul li{
+	margin: 10px
+}
+.imgs ul li{
+	width: 350px;
+	border: 1px solid gray;
+	text-align: center;
+	padding: 15px;
+}
+.imgs .cmh{
+	margin: 10px 0;
+	display: inline-block;
+}
+.table{
+	padding: 5px;
+	margin: 20px 20px 0 20px;
+	border: 1px solid black;
+	box-shadow: 2px 2px 10px gray;
+}
+.table h2{
+	margin:15px;
+}
+.table h3{
+	margin:15px;
+}
+.table p{
+	margin:15px;
+}
+.table img{
+	margin:15px;
+}
+.table ol,.table ol li{
+	margin: 10px
+}
+.table table{
+	width: 100%;
+}
+.table th{
+	background-color:#333333;
+	color: white;
+	border-right: 1px solid white;
+}
+.table td{
+	border-bottom: 1px solid gray;
+	border-right:  1px solid gray;
+}
+.table .lastTd{
+	border:none;
+	background-color: gray;
+}
+.foot{
+	padding: 5px;
+	margin: 20px 20px 0 20px;
+	border: 1px solid black;
+	box-shadow: 2px 2px 10px gray;
+}
+.foot h2{
+	margin:15px;
+}
+.foot h3{
+	margin:15px;
+}
+.foot p{
+	margin:15px 0;
+}
+.foot img{
+	margin:15px;
+}
+.foot form:nth-child(3),.foot form:nth-child(4),.foot form:nth-child(6){
+	margin-left: 200px;
+}
+.foot input[type="submit"]{
+	margin-left: -180px;
+	margin-top: 20px; 
+	margin-bottom: 10px; 
+	width: 110%;
+	border-radius: 15px;
+	height: 50px;
+	background-color: blue;
+	color: white;
+}
+#foot{
+	margin: 10px 0px 0;
+	background-color: black;
+	height: 50px;
+}
+#foot p{
+	color: white;
+	text-align: center;
+	line-height: 50px;
+}

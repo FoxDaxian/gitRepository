@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="index.js"></script>
+	<style>
+		.tags_container{
+			flex-wrap: wrap;
+			display:flex;
+			justify-content: flex-start;
+		}
+		span{
+			background-color: yellowgreen;
+			max-width: 100vw;
+			line-height:60px;
+			margin-right:20px;
+			margin-bottom:20px;
+			font-size:40px;
+			color:greenyellow;
+			text-shadow:
+			0 1px hsl(0,0%,50%),
+			0 2px hsl(0,0%,45%),
+			0 3px hsl(0,0%,40%),
+			0 4px hsl(0,0%,35%),
+			0 5px hsl(0,0%,30%),
+			0 5px 10px black;
+			box-shadow:
+			0 1px hsl(0,0%,50%),
+			0 2px hsl(0,0%,45%),
+			0 3px hsl(0,0%,40%),
+			0 4px hsl(0,0%,35%),
+			0 5px hsl(0,0%,30%),
+			0 5px 10px black;
+		}
+		span:hover{
+			cursor:pointer;
+		}
+	</style>
+</head>
+<body>
+	tags:<input type="text" id="tags_input">
+	<div class="tags_container"></div>
+	<br><br><br><br>
+	<textarea name="" id="textarea" cols="30" rows="10"></textarea>
+	<br>
+	<button>确认兴趣爱好</button>
+	<div class="textarea_container"></div>
+</body>
+</html>

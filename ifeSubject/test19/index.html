@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		span{
+			background-color: red;
+			width:12px;
+			font-size: 20px;
+			margin-right: 4px;
+			height:0;
+			transition:1s;
+		}
+		.container{
+			height:900px;
+			display:flex;
+			display:-webkit-flex;
+			align-items: flex-end;
+			justify-content: flex-start;
+		}
+	</style>
+	<script src="index.js"></script>
+</head>
+<body>
+	<input type="text" placeholder="请输入1-800的任意高度">
+	<input type="button" value="左侧入">
+	<input type="button" value="右侧入">
+	<input type="button" value="左侧出">
+	<input type="button" value="右侧出">
+	<input type="button" value="随意生成158个">
+	<input type="button" value="排起来">
+	<div class="container"></div>
+</body>
+</html>

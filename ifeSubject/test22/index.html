@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="index.js"></script>
+	<style>
+		.wrap,.wrap *{
+			background-color: #fff;
+		}
+		.wrap{
+			width: 1500px;
+			height: 500px;
+			margin: 0 auto;
+			border:1px solid;
+			display: flex;
+			justify-content: space-around;
+			align-items:center;
+		}
+		.wrap>div{
+			display: flex;
+			justify-content: space-around;
+			align-items:center;
+			width: 700px;
+			height:450px;
+			border:1px solid;
+		}
+		.wrap>div>div{
+			display: flex;
+			justify-content: space-around;
+			align-items:center;
+			width: 300px;
+			height:400px;
+			border:1px solid;
+		}
+		.wrap>div>div>div{
+			display: flex;
+			justify-content: space-around;
+			align-items:center;
+			width: 120px;
+			height:380px;
+			border:1px solid;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="first">
+			<div class="second">
+				<div class="third"></div>
+				<div class="third"></div>
+			</div>
+			<div class="second">
+				<div class="third"></div>
+				<div class="third"></div>
+			</div>
+		</div>
+		<div class="first">
+			<div class="second">
+				<div class="third"></div>
+				<div class="third"></div>
+			</div>
+			<div class="second">
+				<div class="third"></div>
+				<div class="third"></div>
+			</div>
+		</div>
+	</div>
+	<button>前</button>
+	<button>中</button>
+	<button>后</button>
+	<button>层次</button>
+</body>
+</html>

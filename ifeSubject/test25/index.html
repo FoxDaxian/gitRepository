@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="index.js"></script>
+	<style>
+		body{
+			margin:0;
+		}
+		body *{
+			-webkit-user-select:none;
+		}
+		fieldset{
+			width:500px;
+			transform:translateX(calc(50vw - 50%));
+		}
+		li{
+			position: relative;
+			list-style: none;
+			color:#000;
+		}
+		div{
+			margin-bottom: 10px;
+			display:flex;
+			justify-content:flex-start;
+		}
+		.add{
+			margin-left: 20px;
+		}
+		.triangle:before{
+			position: absolute;
+			left:-12px;
+			top:6px;
+			content:"";
+			display:block;
+			width:0px;
+			border:4px solid transparent;
+			border-top:8px solid black;
+		}
+		.triangle_left:before{
+			border-top:4px solid transparent;
+			border-left:8px solid black;
+		}
+		.triangle:hover:before{
+			cursor: pointer;
+		}
+		img{
+			visibility:hidden;
+		}
+		img:hover{
+			cursor: pointer;
+		}
+		div:hover img{
+			visibility:visible;
+		}
+		div:hover>span{
+			cursor: pointer;
+			color:blue;
+		}
+	</style>
+</head>
+<body>
+	<fieldset>
+		<legend>任务25</legend>
+		<input type="text">
+		<input type="button" value="搜索">
+		<input type="button" value="清除">
+		<ul>
+			<li>
+				<div>
+					<span>游戏</span>
+				</div>
+				<ul>
+					<li>
+						<div>
+							<span>街头篮球</span>
+						</div>
+						<ul>
+							<li>
+								<div>
+									<span>前锋</span>
+								</div>
+								<ul>
+									<li>
+										<div>
+											<span>大前锋</span>
+										</div>
+									</li>
+									<li>
+										<div>
+											<span>小前锋</span>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<div>
+									<span>后卫</span>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<div>
+							<span>梦幻西游</span>
+						</div>
+						<ul>
+							<li>
+								<div>
+									<span>大唐官府</span>
+								</div>
+							</li>
+							<li>
+								<div>
+									<span>化生寺</span>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<div>
+							<span>炉石传说</span>
+						</div>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</fieldset>
+</body>
+</html>

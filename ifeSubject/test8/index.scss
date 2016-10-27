@@ -1,0 +1,39 @@
+@import url("../reset.css");
+#wrap{
+	overflow:hidden;
+	@mixin generateGrid($onoff) {
+		@if $onoff == true{
+			@for $i from 1 through 12 {
+				.bs_big#{$i}{
+					width:(100% / 12 * $i)
+				}
+			}
+		}@else{
+			@for $i from 1 through 12 {
+				.bs_small#{$i}{
+					width:(100% / 12 * $i)
+				}
+			}
+		}
+	}
+	>div{
+		margin-top:20px;
+		float:left;
+		height:52px;
+		padding:0 10px;
+		box-sizing:border-box;
+		.bs{
+			height: 100%;
+			width:100%;
+			border:1px solid #999;
+			box-sizing:border-box;
+			background-color: #eee;
+		}
+	}
+	@media (min-width:768px) {
+		@include generateGrid(true);
+	}
+	@media (max-width:768px) {
+		@include generateGrid(false);
+	}
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="index.js"></script>
+	<style>
+		body{
+			min-width: 350px;
+			margin: 0;
+			padding:0;
+		}
+		.wrap{
+			margin:10px;
+			padding: 20px;
+		}
+		p{
+			height: 18px;
+			padding-left: 76px;
+			color:#A4A4A4;
+			font-size: 12px;
+		}
+		span{
+			font-size: 16px;
+			font-weight: bold;
+			display: inline-block;
+			text-align: right;
+			width: 70px;
+		}
+		input{
+			width:350px;
+			height: 24px;
+			border-radius:6px;
+			border:1px solid gray;
+			outline: none;
+			padding-left: 10px;
+			box-shadow: 0 0 2px rgba(0,0,0,0.5);
+		}
+		button{
+			border:1px solid gray;
+			height: 40px;
+			width: 80px;
+			color:#fff;
+			line-height: 40px;
+			text-align: center;
+			background-color: #306FB0;
+			font-size: 20px;
+			border-radius: 10px;
+			outline: none;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="name">
+			<span>名称</span>
+			<input type="text">
+			<p>必填，长度为4~16个字符</p>
+		</div>
+		<div class="password">
+			<span>密码</span>
+			<input type="password">
+			<p></p>
+		</div>
+		<div class="password_repeat">
+			<span>密码确认</span>
+			<input type="password">
+			<p></p>
+		</div>
+		<div class="email">
+			<span>邮箱</span>
+			<input type="text">
+			<p></p>
+		</div>
+		<div class="phone">
+			<span>手机</span>
+			<input type="text">
+			<p></p>
+		</div>
+		<button>提交</button>
+	</div>
+</body>
+</html>

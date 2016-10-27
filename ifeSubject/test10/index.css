@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#wrap {
+  margin-top: 100px;
+  border: 1px solid black;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#wrap div {
+  margin-bottom: 10px;
+  width: 150px;
+  border: 1px solid red;
+}
+#wrap .div1 {
+  height: 120px;
+}
+#wrap .div2 {
+  height: 100px;
+}
+#wrap .div3 {
+  height: 40px;
+}
+#wrap .div4 {
+  height: 200px;
+  border: 1px solid blue;
+}
+@media screen and (max-width: 650px) {
+  #wrap {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  #wrap .div4 {
+    order: -1;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

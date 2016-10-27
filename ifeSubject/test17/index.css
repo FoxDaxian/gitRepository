@@ -1,0 +1,91 @@
+body{
+	overflow: hidden;
+}
+.aqi-chart-wrap{
+	position: relative;
+	height:600px;
+	width:1700px;
+	border-left:1px solid black;
+	border-bottom:1px solid black;
+	margin:50px auto 0;
+}
+.aqi-chart-wrap:before{
+	content:"";
+	position: absolute;
+	border:10px solid transparent;
+	border-bottom:10px solid black;
+	top:-20px;
+	left:-10px;
+}
+.aqi-chart-wrap:after{
+	content:"";
+	position: absolute;
+	border:10px solid transparent;
+	border-left:10px solid black;
+	bottom:-10px;
+	right:-20px;
+}
+.airNumber{
+	position: absolute;
+	height:600px;
+	width:10px;
+	left:-10px;
+}
+.airNumber ul{
+	height:600px;
+	width:10px;
+	display:-ms-flexbox;
+	display:flex;
+	-ms-flex-wrap:wrap;
+	flex-wrap:wrap;
+	-ms-flex-align:end;
+	align-items:flex-end;
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.airNumber ul li{
+	position: relative;
+	height:2px;
+	width:10px;
+	background-color: black;
+	margin:0;
+	padding:0;
+}
+.airNumber ul li span{
+	position: absolute;
+	left:-25px;
+	top:-8px;
+}
+.airNumber ul li:nth-of-type(6) span{
+	position: absolute;
+	left:-10px;
+	top:-8px;
+}
+.main_div{
+	position: absolute;
+	width:100%;
+	height:100%;
+}
+.main_div ul{
+	position:absolute;
+	bottom:0;
+	margin:0;
+	padding:0;
+}
+.main_div ul:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.main_div ul li{
+	float:left;
+	position: relative;
+	list-style: none;
+}
+.main_div ul li span{
+	word-wrap:break-word;
+}
+.main_div ul li div{
+	transition:height 1s;
+}

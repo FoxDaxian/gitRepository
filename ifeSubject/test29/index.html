@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="index.js"></script>
+	<style>
+		*{
+			margin:0;
+			margin-top:50px;
+			margin-left:50px;
+			padding:0;
+		}
+		label{
+			font-size: 50px;
+		}
+		[type="text"]{
+			height: 50px;
+			line-height: 50px;
+			font-size: 20px;
+			width:500px;
+			border:1px solid #000;
+			outline:none;
+			text-indent:0.5em;
+			border-radius: 8px;
+		}
+		[type="button"]{
+			background-color: #306FB0;
+			color:#fff;
+			border-radius: 8px;
+			border:1px solid #000;
+			height: 50px;
+			width: 100px;
+			outline: none;
+			font-size: 30px;
+		}
+		[type="button"]:hover{
+			cursor: pointer;
+		}
+		div{
+			height: 50px;
+			line-height: 50px;
+			font-size: 30px;
+			color:gray;
+		}
+	</style>
+</head>
+<body>
+	<label for="input">名称</label>
+	<input type="text" id="input">
+	<input type="button" value="验证">
+	<div>必填，长度为4~16个字符</div>
+</body>
+</html>

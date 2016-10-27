@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="index.js"></script>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<fieldset id="form-gra-time">
+		<legend>请选择日期粒度：</legend>
+		<label>日<input name="gra-time" value="day" type="radio" checked="checked"></label>
+		<label>周<input name="gra-time" value="week" type="radio"></label>
+		<label>月<input name="gra-time" value="month" type="radio"></label>
+	</fieldset>
+	<fieldset>
+		<legend>请选择查看的城市：</legend>
+		<select id="city-select">
+			<option>北京</option>
+			<option>上海</option>
+			<option>广州</option>
+			<option>深圳</option>
+			<option>成都</option>
+			<option>西安</option>
+			<option>福州</option>
+			<option>厦门</option>
+			<option>沈阳</option>
+		</select>
+	</fieldset>
+	<div class="aqi-chart-wrap">
+		<div class="airNumber">
+			<ul>
+				<li><span>500</span></li>
+				<li><span>400</span></li>
+				<li><span>300</span></li>
+				<li><span>200</span></li>
+				<li><span>100</span></li>
+				<li><span>0</span></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+@import url(../reset.css);
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+table tr:hover {
+  cursor: pointer;
+  background-color: #cccccc;
+}
+table tr td {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-align: left;
+}
+table tr td:nth-of-type(1) {
+  width: 50px;
+  height: 26px;
+}
+table tr td:nth-of-type(2) {
+  width: 150px;
+  height: 26px;
+}
+table tr td:nth-of-type(3) {
+  width: 50px;
+  height: 26px;
+}
+table tr:nth-of-type(-n+4) td {
+  color: red;
+}
+table tr:nth-of-type(2n+1) td {
+  background-color: #CCCCCC;
+}
+table tr:nth-of-type(1) td {
+  background-color: #000;
+  color: #fff;
+}
+
+.text {
+  margin: 50px 0 0 50px;
+  border: 1px solid #cccccc;
+  transition: width 1s;
+  width: 100px;
+}
+
+.text:focus {
+  width: 200px;
+}
+
+#wrap {
+  width: 400px;
+  margin-top: 50px;
+  margin-left: 50px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+#wrap ul {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: moveinit 1s;
+}
+#wrap ul li {
+  text-align: center;
+  line-height: 200px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  background-color: red;
+  animation: moveout 1s;
+}
+@keyframes moveinit {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+@keyframes movein {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes moveout {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+#wrap ul li:target {
+  left: 0%;
+  z-index: 1000;
+  animation: movein 1s;
+}
+#wrap ul #item1 {
+  z-index: 99;
+  left: 0%;
+}
+#wrap ul #item2 {
+  background-color: blue;
+}
+#wrap ul #item3 {
+  background-color: yellow;
+}
+#wrap .btn {
+  z-index: 9999;
+  position: absolute;
+  width: 30%;
+  height: 20%;
+  background-color: rgba(255, 184, 255, 0.7);
+  right: 0;
+  bottom: 0;
+}
+#wrap .btn a {
+  display: block;
+  float: left;
+  width: 33.33%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 1px solid  black;
+  text-align: center;
+  line-height: 38px;
+}
+
+/*# sourceMappingURL=index.css.map */

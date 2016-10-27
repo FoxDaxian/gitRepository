@@ -1,0 +1,37 @@
+@import url("../reset.css");
+.wrap{
+	min-width:1024px;
+	&:after{
+		content:"";
+		display: block;
+		clear:both;
+	}
+	.box{
+		float: left;
+		box-sizing:border-box;
+		padding:10px;
+		height:auto;
+		img{
+			width: 100%;
+			cursor: pointer;
+		}
+	}
+}
+.fixImg{
+	position: fixed;
+	max-width:80%;
+	max-height:80%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin:auto;
+}
+.mask{
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.8);
+	position:fixed;
+	top:0;
+	z-index:999;
+}

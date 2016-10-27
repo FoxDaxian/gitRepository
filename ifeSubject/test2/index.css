@@ -1,0 +1,32 @@
+body{
+	margin: 0;
+	padding:0;
+}
+#wrap{
+	min-width: 500px;
+	padding: 20px;
+	margin: 10px;
+	background-color: #eee;
+	border: 1px solid #999; 
+}
+.team{
+	float: left;
+	width: 200px;
+}
+.team img{
+	float: left;
+}
+.team span{
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+}
+.introduce{
+	margin-left: 200px;
+	margin-right: 180px;
+}
+.logo{
+	width: 120px;
+	float: right;
+	margin-right: 50px;
+}

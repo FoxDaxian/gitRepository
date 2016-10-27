@@ -1,0 +1,51 @@
+@import url("../reset.css");
+*{
+	font-family:"微软雅黑";
+	-webkit-user-select:none;
+}
+table{
+	@for $i from 1 through 100 {
+		@if $i % 2 == 1 {
+			tr:nth-of-type(#{$i}){
+				background-color: #37B3D5;
+			}
+		}@else{
+			tr:nth-of-type(#{$i}){
+				background-color: #0083B7;
+			}
+		}
+	}
+	tr{
+		border-color:rgba(0,0,0,0.3);
+		td,th{
+			font-size: 20px;
+			color:#A0206B;
+			width: 100px;
+			line-height: 40px;
+			text-align: center;
+			position: relative;
+		}
+		&:hover{
+			background:#fff;
+		}
+	}
+	tr:nth-of-type(1){
+		background-color: #8388A6;
+	}
+}
+.upArrow{
+	position: absolute;
+	border:5px solid transparent;
+	border-bottom:10px solid #000;
+	right: 10px;
+	top: 2px;
+	cursor: pointer;
+}
+.downArrow{
+	position: absolute;
+	border:5px solid transparent;
+	border-top:10px solid #000;
+	right: 10px;
+	bottom: 2px;
+	cursor: pointer;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+		<script src="index.js"></script>
+	<style>
+		body{
+			margin:0px;
+		}
+		#universe{
+			height: 760px;
+			background-color: #000;
+			margin-bottom: 20px;
+			position: relative;
+		}
+		.planet{
+			-webkit-user-select:none;
+			width:300px;
+			height:300px;
+			border-radius: 50%;
+			color:#fff;
+			text-align: center;
+			line-height: 300px;
+			font-weight: bold;
+			font-size: 210px;
+			background: radial-gradient(circle at 100px 100px, #5cabff, #000);
+			position: absolute;
+			transform:translate(calc(50vw - 50%),calc(380px - 50%));
+		}
+		[class^="for_"]{
+			margin-bottom: 10px
+		}
+		.control_panel{
+			float:left;
+			margin-right: 20px;
+		}
+		[class^="track"]{
+			position: absolute;
+			transform:translate(calc(50vw - 50%),calc(380px - 50%));
+			border:1px solid #fff;
+			border-radius: 50%;
+		}
+		.track1{
+			width:380px;
+			height:380px;
+		}
+		.track2{
+			width:460px;
+			height:460px;
+		}
+		.track3{
+			width:540px;
+			height:540px;
+		}
+		.track4{
+			width:620px;
+			height:620px;
+		}
+		[class^="ship"]{
+			transition:1s linear;
+			-webkit-user-select:none;
+			position: absolute;
+			background-color: blue;
+			border-radius:14px;
+			width:80px;
+			height:30px;
+			text-align: center;
+			line-height: 30px;
+			color:yellowgreen;
+			font-weight: bold;
+			font-size: 16px;
+		}
+		.ship1{
+			transform:translate(calc(50vw - 50%),calc(190px - 50%)) rotate(0deg);
+			transform-origin:center 204px;
+		}
+		.ship2{
+			transform:translate(calc(50vw - 50%),calc(150px - 50%)) rotate(0deg);
+			transform-origin:center 244px;
+		}
+		.ship3{
+			transform:translate(calc(50vw - 50%),calc(110px - 50%)) rotate(0deg);
+			transform-origin:center 284px;
+		}
+		.ship4{
+			transform:translate(calc(50vw - 50%),calc(70px - 50%)) rotate(0deg);
+			transform-origin:center 324px;
+		}
+		textarea{
+			resize:none;
+		}
+	</style>
+</head>
+<body>
+	<div id="universe">
+		<div class="planet">球</div>
+		<div class="track1"></div>
+		<div class="track2"></div>
+		<div class="track3"></div>
+		<div class="track4"></div>
+		<div class="ship1">灵能100%</div>
+		<div class="ship2">灵能100%</div>
+		<div class="ship3">灵能100%</div>
+		<div class="ship4">灵能100%</div>
+	</div>
+	<fieldset>
+		<legend>控制面板</legend>
+		<div class="control_panel">
+			<div class="for_1">
+				<input type="button" value="launch">
+				<input type="button" value="fly">
+				<input type="button" value="stop">
+				<input type="button" value="destory">
+			</div>
+			<div class="for_2">
+				<input type="button" value="launch">
+				<input type="button" value="fly">
+				<input type="button" value="stop">
+				<input type="button" value="destory">
+			</div>
+			<div class="for_3">
+				<input type="button" value="launch">
+				<input type="button" value="fly">
+				<input type="button" value="stop">
+				<input type="button" value="destory">
+			</div>
+			<div class="for_4">
+				<input type="button" value="launch">
+				<input type="button" value="fly">
+				<input type="button" value="stop">
+				<input type="button" value="destory">
+			</div>
+		</div>
+		<textarea readonly name="" id="" cols="230" rows="7"></textarea>
+	</fieldset>
+</body>
+</html>

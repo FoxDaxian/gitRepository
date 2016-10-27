@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="index.js"></script>
+	<style>
+		body{
+			margin:0;
+		}
+		.wrap{
+			margin:100px auto 0;
+			width:500px;
+			display:flex;
+			justify-content:space-around;
+			flex-wrap: wrap;
+		}
+		.in,.out{
+			width:250px;
+		}
+		.content{
+			align-self:flex-start;
+			width: 100%;
+			margin-top: 50px;
+		}
+		.college{
+			display: none;
+		}
+		select{
+			height: 28px;
+			width: 100px;
+			border-radius:4px;
+			outline: none;
+			margin-left: 50px;
+		}
+		.out_form{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="in">
+			<input type="radio" name="student" id="in_school" fsy="in_form" checked>
+			<label for="in_school">在校生</label>
+		</div>
+		<div class="out">
+			<input type="radio" name="student" id="out_school" fsy="out_form">
+			<label for="out_school">非在校生</label>
+		</div>
+		<div class="content">
+			<div class="in_form">
+				<span>学校：</span>
+				<select name="city" id="city">
+					<option value="bj">北京</option>
+					<option value="tj">天津</option>
+					<option value="xm">厦门</option>
+				</select>
+				<select name="bj" id="bj">
+					<option value="北京大学">北京大学</option>
+					<option value="清华大学">清华大学</option>
+				</select>
+				<select name="tj" id="tj" class="college">
+					<option value="天津大学">天津大学</option>
+					<option value="南开大学">南开大学</option>
+				</select>
+				<select name="xm" id="xm" class="college">
+					<option value="厦门大学">厦门大学</option>
+					<option value="厦门理工">厦门理工</option>
+				</select>
+			</div>
+			<div class="out_form">
+				<span>就业单位</span>
+				<input type="text">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
